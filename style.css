@@ -1,0 +1,724 @@
+.navbar {
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #FFFF;
+  border-bottom: 1px solid #2f4f4f;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* efek bayangan */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper {
+  padding-top: 100px; /* agar konten tidak tertutup navbar */
+}
+
+body {
+  padding-top: 100px;
+}
+
+.navbar:hover {
+    color: #78B9B5;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #555879;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #2f4f4f;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+.btn-signup {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-signup:hover {
+  background-color: #3e5e5e;
+}
+
+/* ===== Modal Informasi ===== */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'comic sans ms';
+}
+
+.modal-content h2 {
+  font-size: 28px;
+  color: #2f4f4f;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: #000;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #555879;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #555879;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl-biru {
+  background: #2F5249;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #FFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #78B9B5;
+  text-decoration: underline;
+}
+
+a.tbl-hijau {
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #2F5249;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-hijau:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+.modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: #333;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+#pemerintahan {
+  padding: 60px 20px;
+  background-color: #f4f9f8;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.Perangkat-Desa {
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.Perangkat-Desa img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 3px solid #2f4f4f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling Pemerintah */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+/* Tambahan penting untuk scroll */
+  max-height: 60vh;         /* Batasi tinggi modal agar tidak melebihi layar */
+  overflow-y: auto;         /* Aktifkan scroll vertikal jika konten terlalu panjang */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+.struktur-organisasi-vertikal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.org-box {
+  border: 2px solid #2f4f4f;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.org-box strong {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+  color: #2f4f4f;
+}
+
+/* Garis vertikal antar level */
+.garis-vertikal {
+  width: 2px;
+  height: 30px;
+  background-color: #2f4f4f;
+  margin: 0 auto;
+}
+
+/* Kotak sejajar horizontal */
+.horizontal-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ===== Layanan Publik ===== */
+#LayananPublik {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.layanan-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.layanan-container h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #555879;
+}
+
+.layanan-container .deskripsi {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.layanan-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.layanan-item h3 {
+  font-size: 20px;
+  color: #2f4f4f;
+  margin-bottom: 15px;
+}
+
+.layanan-item ul {
+  padding-left: 20px;
+}
+
+.layanan-item ul li {
+  margin-bottom: 10px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  border: 2px solid #2F5249;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.tab-btn.active {
+  background-color: #2F5249;
+  color: #fff;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section h3 {
+  margin-bottom: 15px;
+  color: #2F5249;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-section form label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+.form-section input, .form-section textarea, .form-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.form-section button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2F5249;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+
+.tab-btn {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+#layanan-online .layanan-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+#layanan-online .layanan-item {
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+#layanan-online .tbl-biru {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2F5249;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+#layanan-online .tbl-biru:hover {
+  background-color: #3c6d60;
+}
+
+.button-layanan:hover {
+  background-color: #1e3932;
+  cursor: pointer;
+  text-decoration: underline;
+
+/* ==== Informasi Publik ==== */
+#InformasiPublik {
+  background-color: #f3f4f6;
+  padding: 60px 20px;
+}
+
+.info-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-container h2 {
+  font-size: 36px;
+  font-family: 'Comic Sans MS';
+  color: #555879;
+  margin-bottom: 10px;
+}
+
+.info-container .deskripsi {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.info-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  color: #2f4f4f;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Bagian Kegiatan ===== */
+#Kegiatan {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* ganti jika mau beda tema */
+}
+
+#Kegiatan .kolom {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#Kegiatan h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
+  color: #555879;
+  margin-bottom: 15px;
+}
+
+#Kegiatan .deskripsi {
+  font-size: 18px;
+  color: #444;
+  max-width: 700px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#Kegiatan ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+#Kegiatan ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Icon peluru di depan list (bisa emoji atau custom) */
+#Kegiatan ul li::before {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.kontak-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.kontak-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kontak-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.kontak-info h2 {
+  font-size: 32px;
+  color: #2f4f4f;
+  margin-bottom: 10px;
+}
+
+.kontak-info ul {
+  padding-left: 18px;
+  list-style: disc;
+  margin-bottom: 20px;
+}
+
+.kontak-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.kontak-form-modern {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.kontak-form-modern input,
+.kontak-form-modern textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.kontak-form-modern input:focus,
+.kontak-form-modern textarea:focus {
+  border-color: #2f4f4f;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(47, 79, 79, 0.3);
+  outline: none;
+}
+
+.kontak-form-modern textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.kontak-form-modern button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2f4f4f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.kontak-form-modern button:hover {
+  background-color: #1f3434;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .kontak-container {
+    flex-direction: column;
+  }
+}

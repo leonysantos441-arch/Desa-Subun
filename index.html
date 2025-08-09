@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Subun.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">DesaSubun.</div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#Beranda">Beranda</a></li>
+                    <li><a href="#Profil">Profil</a></li>
+                    <li><a href="#Pemerintahan">Pemerintahan</a></li>
+                    <li><a href="#LayananPublik">Layanan Publik</a></li>
+                    <li><a href="#InformasiPublik">Informasi Publik</a></li>
+                    <li><a href="#Kegiatan">Kegiatan</a></li>
+                    <li><a href="#Kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <!-- Modal Informasi -->
+        <div id="modalInfo" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Informasi Lengkap Desa Subun</h2>
+                <p>Desa Subun merupakan bagian dari Kecamatan Insana Barat, Kabupaten Timor Tengah Utara. Desa ini dikenal dengan budaya gotong royong dan kehidupan sosial yang aktif.</p>
+                <p>Dengan potensi alam berupa lahan pertanian dan sumber air bersih, Desa Subun terus mengembangkan sektor pertanian, peternakan, dan UMKM berbasis lokal.</p>
+                <p>Pemerintah desa aktif mendorong pelayanan berbasis digital dan keterbukaan informasi publik melalui platform daring seperti website desa ini.</p>
+            </div>
+        </div>
+
+        <!--untuk beranda-->
+        <section id="Beranda">
+            <img src="https://cdn.pixabay.com/photo/2024/09/22/23/01/ai-generated-9067131_1280.jpg"
+            style="width: 50%; height: 10cm; display:block;" />
+            <div class="kolom">
+                <p class="deskripsi">Selamat Datang</p>
+                <h2>Desa Subun, Bersatu Membangun Desa</h2>
+                <p>Desa Subun adalah desa yang terletak di kawasan pedesaan yang asri dan damai, dengan masyarakat yang menjunjung tinggi nilai kebersamaan dan gotong royong. Melalui pembangunan berkelanjutan dan pelayanan publik yang transparan, Desa Subun terus bergerak menuju desa mandiri, maju, dan sejahtera.</p>
+                <p><a href="#" class="tbl-hijau" onclick="openModal()">Informasi Lainnya</a></p>
+            </div>
+        </section>
+
+        <!-- Modal Profil -->
+        <div id="modalProfil" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalProfil()">&times;</span>
+                <h2>Informasi Tambahan Desa Subun</h2>
+                <p><strong>Sejarah:</strong> Desa Subun mulai berkembang sejak tahun 1970 dan merupakan bagian dari wilayah adat yang menjunjung tinggi nilai-nilai tradisional. Kini, desa ini berkembang pesat sebagai desa yang mandiri.</p>
+                <p><strong>Potensi:</strong> Desa Subun memiliki lahan subur yang cocok untuk pertanian dan peternakan, serta potensi wisata alam perbukitan yang masih alami.</p>
+                <p><strong>Visi:</strong> “Mewujudkan masyarakat Desa Subun yang Sejahtera, Mandiri dan Berbudaya dengan menjunjung tinggi nilai-nilai gotong royong serta memaksimalakan potensi desa, untuk kesejahteraan masyarakat.”</p>
+                <p><strong>Misi:</strong></p>
+                
+                <ul>
+                    <li>Mengembangkan potensi desa yang berbasis pada partisipasi aktif masyarakat, untuk meningkatkan kesejahteraan masyarakat desa.</li>
+                    <li>Meningkatkan pengelolaan keuangan desa yang transparan dan akuntabel serta meningkatkan partisipasi masyarakat dalam  pengelolaan keuangan desa</li>
+                    <li>Meningkatkan pelayanan administrasi desa, dengan memanfaatkan teknologi informasi dan komunikasi serta memberikan pelayanan yang cepat, mudah dan transparan bagi masyarakat desa</li>
+                    <li>Meningkatkan partisipasi masyarakat dalam pengambilan keputusan di desa, dengan memperkuat kelembagaan desa, dan memperkuat kerja sama antara pemerintah desa dan masyarakat</li>
+                    <li>Meningkatkan keamanan dan ketertiban di desa, melalui penguatan peran aparat keamanan desa dan partisipasi aktif masyarakat dalam menjaga ketertiban dan keamanan.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section Profil -->
+        <section id="Profil">
+            <div class="kolom">
+                <h2>Mengenal Desa Subun Lebih Dekat</h2>
+                <p class="deskripsi">Desa Subun adalah desa yang terletak di wilayah perbukitan dengan masyarakat yang ramah, budaya yang kuat, dan semangat gotong royong yang tinggi.</p>
+                <p>Secara administratif, Desa Subun berada di Kecamatan Insana Barat, Kabupaten Timor Tengah Utara. Potensi utama desa ini ada di sektor pertanian, peternakan, dan pariwisata alam.</p>
+                <p>Kehidupan sosial sangat aktif, terlihat dari kegiatan adat, keagamaan, dan pelestarian budaya lokal. Pemerintah desa juga telah menerapkan sistem digital dalam pelayanan masyarakat.</p>
+                <p><a href="#" class="tbl-hijau" onclick="openModalProfil()">Informasi Lebih Lanjut</a></p>
+            </div>
+            <img src="https://media.istockphoto.com/id/1401854209/id/vektor/desa-dan-penduduk-desa-abad-pertengahan-kuno-yang-terisolasi.jpg?s=1024x1024&w=is&k=20&c=Y-AoITRzZuc8JsUNwk3y9S_fSTHHE20YbPdPkbSI0K8=" style="width: 45%; display: block;" />
+        </section>
+
+        <!-- Modal Pemerintahan -->
+        <div id="modalStruktur" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalStruktur()">&times;</span>
+                <h2 style="text-align: center;">Struktur Organisasi Desa Subun</h2>
+                <p><a href="#" class="tbl-hijau" onclick="openModalStruktur()">Informasi Lainnya</a></p>
+
+                <div class="struktur-organisasi-vertikal">
+                    <div class="org-box">KEPALA DESA<br><strong>Frederikus Naisoko, S.H</strong></div>
+                    <div class="garis-vertikal"></div>
+                    <div class="org-box">SEKRETARIS DESA<br><strong>Yohanes G. Luti, S.Pd</strong></div>
+                    <div class="garis-vertikal"></div>
+                    <div class="horizontal-wrapper">
+                        <div class="org-box">KAUR TU & UMUM<br><strong>Frederikus Naibali</strong></div>
+                        <div class="org-box">KAUR KEUANGAN<br><strong>Matias Baunsele</strong></div>
+                        <div class="org-box">KAUR PERENCANAAN<br><strong>Frans Naibali</strong></div>
+                    </div>
+
+                    <div class="garis-vertikal"></div>
+                    <div class="horizontal-wrapper">
+                        <div class="org-box">KASIE PEMERINTAHAN<br><strong>Agustinus Tame Edi</strong></div>
+                        <div class="org-box">KASIE KESEJAHTERAAN<br><strong>Yohanes Tahoni</strong></div>
+                        <div class="org-box">KASIE PELAYANAN<br><strong>Daud Imanuel</strong></div>
+                    </div>
+                    
+                    <div class="garis-vertikal"></div>
+                    <div class="horizontal-wrapper">
+                        <div class="org-box">KEPALA DUSUN I<br><strong>Albinus Fautnine</strong></div>
+                        <div class="org-box">KEPALA DUSUN II<br><strong>Maria D. Naihala</strong></div>
+                        <div class="org-box">KEPALA DUSUN III<br><strong>Antonio I. Metboki</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= SECTION PEMERINTAHAN ======= -->
+         <section id="pemerintahan" class="Pemerintahan">
+            <div class="kolom">
+                <h2>Struktur Pemerintahan Desa Subun</h2>
+                <p class="deskripsi">Struktur organisasi yang menjelaskan susunan perangkat Desa Subun dalam menjalankan fungsi pemerintahan, pelayanan, dan pembangunan di desa.</p>
+                <a class="tbl-hijau" onclick="openModalStruktur()">Lihat Struktur Organisasi</a>
+            </div>
+            
+            <div class="Perangkat-Desa">
+                <img src="kades.jpg" alt="Kepala Desa">
+                <p>Kepala Desa<br><strong>Frederikus Naisoko, S.H</strong></p>
+            </div>
+            
+            <div class="Perangkat-Desa">
+                <img src="https://via.placeholder.com/150" alt="Sekretaris Desa">
+                <p>Sekretaris Desa<br><strong>Yohanes G. Luti, S.Pd</strong></p>
+            </div>
+            
+            <div class="Perangkat-Desa">
+                <img src="https://via.placeholder.com/150" alt="Kaur Keuangan">
+                <p>Kaur Keuangan<br><strong>Matias Baunsele</strong></p>
+            </div>
+            
+            <div class="Perangkat-Desa">
+                <img src="https://via.placeholder.com/150" alt="Kasie Pemerintahan">
+                <p>Kasie Pemerintahan<br><strong>Agustinus Tame Edi</strong></p>
+            </div>
+            
+            <div class="Perangkat-Desa">
+                <img src="https://via.placeholder.com/150" alt="Kepala Dusun I">
+                <p>Kepala Dusun I<br><strong>Albinus Fautnine</strong></p>
+            </div>
+        </section>
+
+        <!--untuk Layanan Publik-->
+        <section id="layanan">
+            <div class="layanan-container">
+                <h2>Layanan Publik</h2>
+                <p class="deskripsi">Desa Subun menyediakan berbagai layanan publik yang dapat diakses oleh seluruh warga secara cepat dan transparan.</p>
+                <a href="#layanan-online" class="tbl-biru">Layanan Online</a>
+                
+                <div class="layanan-grid">
+                    <div class="layanan-item">
+                        <h3>Administrasi</h3>
+                        <ul>
+                            <li>Surat Keterangan Domisili</li>
+                            <li>Surat Pengantar KTP/KK</li>
+                            <li>Surat Pengantar Nikah</li>
+                            <li>Surat Usaha / SKTM</li>
+                        </ul>
+                    </div>
+            
+                    <div class="layanan-item">
+                        <h3>Kependudukan</h3>
+                        <ul>
+                            <li>Pendaftaran Kelahiran</li>
+                            <li>Mutasi Penduduk</li>
+                            <li>Akta Kelahiran / Kematian</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="layanan-item">
+                        <h3>Bantuan Sosial</h3>
+                        <ul>
+                            <li>Data Penerima BLT/PKH</li>
+                            <li>Formulir Pendaftaran Bantuan</li>
+                            <li>Informasi Program Sosial</li>
+                        </ul>
+                    </div>
+            
+                    <div class="layanan-item">
+                        <h3>Kesehatan & Pendidikan</h3>
+                        <ul>
+                            <li>Jadwal Posyandu</li>
+                            <li>Layanan Puskesmas</li>
+                            <li>Beasiswa / Sekolah Gratis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN PUBLIK - TOMBOL KE FORMULIR -->
+         <section id="layanan-online" style="padding: 60px 20px; background-color: #f9f9f9;">
+            <div class="layanan-container">
+                <h2>Layanan Publik</h2>
+                <p class="deskripsi">Pilih layanan yang Anda butuhkan. Klik tombol berikut untuk mengisi formulir secara online:</p>
+                <a href="#layanan-online" class="tbl-biru">Layanan Online</a>
+                
+                <div class="layanan-grid">
+                    <div class="layanan-item">
+                        <h3>Administrasi</h3>
+                        <p>Layanan surat menyurat seperti domisili, SKTM, dan lainnya.</p>
+                        <a href="https://forms.gle/link-administrasi" target="_blank" class="tbl-biru">Isi Formulir</a>
+                    </div>
+                    
+                    <div class="layanan-item">
+                        <h3>Kependudukan</h3>
+                        <p>Formulir pendaftaran kelahiran, mutasi, dan akta.</p>
+                        <a href="https://forms.gle/link-kependudukan" target="_blank" class="tbl-biru">Isi Formulir</a>
+                    </div>
+                    
+                    <div class="layanan-item">
+                        <h3>Bantuan Sosial</h3>
+                        <p>Permohonan BLT/PKH dan informasi program sosial lainnya.</p>
+                        <a href="https://forms.gle/link-bansos" target="_blank" class="tbl-biru">Isi Formulir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--untuk Informasi Publik-->
+        <section id="InformasiPublik">
+            <div class="info-container">
+                <h2>Informasi Publik</h2>
+                <p class="deskripsi"></p>
+                <p>Subun berkomitmen untuk mewujudkan keterbukaan informasi demi pelayanan yang transparan dan akuntabel.</p>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>📜 Peraturan Desa</h3>
+                        <p>Dokumen Perdes, Peraturan Kepala Desa, dan RPJMDes tersedia dan dapat diakses warga.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>💰 APBDes & Keuangan</h3>
+                        <p>Informasi tentang APBDes, laporan realisasi anggaran, dan rencana pembangunan tahunan.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>🏗️ Pembangunan Desa</h3>
+                        <p>Update kegiatan pembangunan fisik, sosial, dan dokumentasi kegiatan desa.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>👥 Data Kependudukan</h3>
+                        <p>Statistik jumlah penduduk, umur, pendidikan, pekerjaan, dan persebaran warga.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>🧾 Layanan Surat</h3>
+                        <p>Permohonan surat secara online, syarat administrasi, dan panduan layanan desa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--untuk kegiatan-->
+        <section id="Kegiatan">
+            <div class="kolom">
+                <h2>Kegiatan Desa Subun</h2>
+                <p class="deskripsi"></p>
+                <p>Pemerintah Desa Subun bersama masyarakat rutin mengadakan berbagai kegiatan untuk mendukung pembangunan dan memperkuat hubungan sosial antarwarga.</p>
+                <ul>
+                    <li>🏗️ Pembangunan infrastruktur desa secara bertahap dan merata</li>
+                    <li>👩‍🌾 Pelatihan pertanian berkelanjutan bagi warga</li>
+                    <li>🤝 Kegiatan gotong royong dan kebersihan lingkungan</li>
+                    <li>📖 Kelas belajar dan pelatihan keterampilan digital</li>
+                    <li>🎉 Peringatan hari besar dan festival budaya lokal</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- untuk Kontak -->
+        <section class="kontak-section">
+            <div class="kontak-container">
+                <!-- KIRI: Info Kontak + Map -->
+                <div class="kontak-info">
+                    <h2>Hubungi Kami</h2>
+                    <p>Silakan hubungi Pemerintah Desa Subun melalui informasi berikut:</p>
+                    <ul>
+                        <li><strong>Alamat:</strong> Jl. Trans Subun No.1, Kec. Insana Barat, TTU</li>
+                        <li><strong>Telepon:</strong> 0812-3456-7890</li>
+                        <li><strong>Email:</strong> desa.subun@emaildesa.go.id</li>
+                        <li><strong>Jam Pelayanan:</strong> Senin - Jumat, 08.00 - 15.00 WITA</li>
+                    </ul>
+                    
+                    <!-- MAP -->
+                    <div class="map-container">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31587.558456648287!2d124.402486!3d-9.472063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da5c6c0e879bdf9%3A0x99d75028f8d2d76c!2sWest%20Insana%2C%20North%20Central%20Timor%20Regency%2C%20East%20Nusa%20Tenggara!5e0!3m2!1sen!2sid!4v1710000000000"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <!-- KANAN: Formulir Kontak -->
+                <form class="kontak-form-modern">
+                    <input type="text" name="nama" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Aktif" required>
+                    <textarea name="pesan" placeholder="Tulis pesan Anda..." required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        </section>
+    </div>
+    
+    <script>
+    function openModal() {
+        document.getElementById("modalInfo").style.display = "block";
+    }
+    
+    function closeModal() {
+        document.getElementById("modalInfo").style.display = "none";
+    }
+    
+    // Tutup modalInfo jika klik di luar
+    window.addEventListener("click", function (event) {
+        const modalInfo = document.getElementById("modalInfo");
+        if (event.target === modalInfo) {
+            closeModal();
+        }
+        });
+    </script>
+
+    <script>
+    function openModalProfil() {
+        document.getElementById("modalProfil").style.display = "block";
+    }
+    
+    function closeModalProfil() {
+        document.getElementById("modalProfil").style.display = "none";
+    }
+
+    // Klik di luar modal untuk menutup
+    window.onclick = function (event) {
+        const modalProfil = document.getElementById("modalProfil");
+        if (event.target === modalProfil) {
+            modalProfil.style.display = "none";
+        }
+    };
+    </script>
+
+    <script>
+    function openModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "block";
+    }
+
+    function closeModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "none";
+    }
+    
+    // Tutup modal jika klik di luar konten
+    window.onclick = function (event) {
+        const modal = document.getElementById("modalStruktur");
+        if (event.target === modal) {
+            modal.style.display = "none"
+        }
+    }
+    </script>
+
+    <script>
+    
+    // Fungsi untuk modal Profil
+    function openModalProfil() {
+        document.getElementById("modalProfil").style.display = "block";
+    }
+    
+    function closeModalProfil() {
+        document.getElementById("modalProfil").style.display = "none";
+    }
+    
+    // Tutup modal jika klik di luar konten modalProfil 
+    window.addEventListener("click", function(event) {
+        const modalProfil = document.getElementById("modalProfil");
+        if (event.target === modalProfil) {
+            closeModalProfil();
+        }
+    });
+    </script>
+    
+    #Pemerintahan
+    <script>
+    function openModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "block";
+    }
+    
+    function closeModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "none";
+    }
+    
+    // Tutup jika klik di luar modal
+    window.addEventListener("click", function (event) {
+        const modalStruktur = document.getElementById("modalStruktur");
+        if (event.target === modalStruktur) {
+            closeModalStruktur();
+        }
+    });
+    </script>
+
+    <script>
+    function openModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "block";
+    }
+    
+    function closeModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        const modal = document.getElementById("modalStruktur");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+    </script>
+
+    <script>
+    function openModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "block";
+    }
+    
+    function closeModalStruktur() {
+        document.getElementById("modalStruktur").style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        const modal = document.getElementById("modalStruktur");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    <script>
+    function showForm(id) {
+        document.querySelectorAll('.form-section').forEach(f => f.style.display = 'none');
+        document.querySelector(`#form-${id}`).style.display = 'block';
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        }
+    </script>
+
+    <script>
+    function showForm(id) {
+        const forms = document.querySelectorAll('.form-section');
+        const buttons = document.querySelectorAll('.tab-btn');
+        forms.forEach(form => form.classList.remove('active'));
+        buttons.forEach(btn => btn.classList.remove('active'));
+        document.getElementById('form-' + id).classList.add('active');
+        event.target.classList.add('active');
+    }
+    </script>
+
+</body>
+</html>
